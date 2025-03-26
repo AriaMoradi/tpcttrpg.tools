@@ -1,0 +1,82 @@
+[
+    {
+        "title": "FoundryVTT 12.331",
+        "description": "Foundry Virtual Tabletop is a powerful and flexible platform for running tabletop role-playing games online. It provides a suite of tools for game masters and players to create, manage, and play games in a virtual environment.",
+        "slug": "foundryvtt-12.331",
+        "date": "2025-03-25",
+        "tags": [
+            "virtual tabletop",
+            "game master tools"
+        ],
+        "files": [
+            {
+                "name": "FoundryVTT-11.315-crack.zip",
+                "path": "tools/FoundryVTT/crack/FoundryVTT-11.315-crack.zip",
+                "size": 0,
+                "description": "Works with FoundryVTT up to 12.331",
+                "telegram_file_id": "BQACAgQAAxkBAAOmZ-PI2lzo73WVptAnlIiDjdKxc8gAAtsVAAJRt6BR_LHiMRxpWk02BA"
+            },
+            {
+                "name": "FoundryVTT-12.331-Setup.exe",
+                "path": "tools/FoundryVTT/12.331/FoundryVTT-12.331-Setup.exe",
+                "size": 0,
+                "description": "Windows Installer",
+                "telegram_file_id": "BQACAgQAAxkBAANsZ-LyuTasaRdkzGqoK3x3N4CirxoAAr4YAAJiMBhTv5kn47V9fKg2BA"
+            },
+            {
+                "name": "FoundryVTT-12.331.dmg",
+                "path": "tools/FoundryVTT/12.331/FoundryVTT-12.331.dmg",
+                "size": 0,
+                "description": "MacOS Installer",
+                "telegram_file_id": "BQACAgQAAxkBAAOrZ-PI2i2Tw63ryC93136nWBiYFB4AAgoYAAJQfxBTkNS2iHdTefs2BA"
+            },
+            {
+                "name": "FoundryVTT-12.331.zip",
+                "path": "tools/FoundryVTT/12.331/FoundryVTT-12.331.zip",
+                "size": 0,
+                "description": "Linux Installer",
+                "telegram_file_id": "BQACAgQAAxkBAAOsZ-PI2i-ovWOeLCcORWx60ZJbGWEAAg0YAAJQfxBTnrZc3-QUPl82BA"
+            }
+        ]
+    },
+    {
+        "title": "FoundryVTT 12.330",
+        "description": "Foundry Virtual Tabletop is a powerful and flexible platform for running tabletop role-playing games online. It provides a suite of tools for game masters and players to create, manage, and play games in a virtual environment.",
+        "slug": "foundryvtt-12.330",
+        "date": "2025-03-24",
+        "tags": [
+            "virtual tabletop",
+            "game master tools"
+        ],
+        "files": [
+            {
+                "name": "FoundryVTT-11.315-crack.zip",
+                "path": "tools/FoundryVTT/crack/FoundryVTT-11.315-crack.zip",
+                "size": 0,
+                "description": "Works with FoundryVTT up to 12.330",
+                "telegram_file_id": "BQACAgQAAxkBAAOmZ-PI2lzo73WVptAnlIiDjdKxc8gAAtsVAAJRt6BR_LHiMRxpWk02BA"
+            },
+            {
+                "name": "FoundryVTT-12.330-Setup.exe",
+                "path": "tools/FoundryVTT/12.330/FoundryVTT-12.330-Setup.exe",
+                "size": 0,
+                "description": "Windows Installer",
+                "telegram_file_id": "BQACAgQAAxkBAAOnZ-PI2mvkJwNcbD1ja1ITLpQrXkkAAgQWAAK71eBRvmplGPsEux82BA"
+            },
+            {
+                "name": "FoundryVTT-12.330.dmg",
+                "path": "tools/FoundryVTT/12.330/FoundryVTT-12.330.dmg",
+                "size": 0,
+                "description": "MacOS Installer",
+                "telegram_file_id": "BQACAgQAAxkBAANsZ-LyuTasaRdkzGqoK3x3N4CirxoAAr4YAAJiMBhTv5kn47V9fKg2BA"
+            },
+            {
+                "name": "FoundryVTT-12.330.zip",
+                "path": "tools/FoundryVTT/12.330/FoundryVTT-12.330.zip",
+                "size": 0,
+                "description": "Linux Installer",
+                "telegram_file_id": "BQACAgQAAxkBAAOpZ-PI2pogqrRHi7fqgpBom2F20YkAAgYWAAK71eBRtuH4Ws3JWbI2BA"
+            }
+        ]
+    }
+]

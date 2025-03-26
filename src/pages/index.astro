@@ -1,11 +1,64 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import { getCollection, getEntry, type CollectionEntry } from 'astro:content';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const index: CollectionEntry<'index'>[] = await getCollection('index');
+
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>TPCT TTRPG Tools</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .tags {
+            display: flex;
+            gap: 4px;
+        }
+        .tag {
+            background: #eee;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <h1>TTRPG Tools Index</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Tags</th>
+            </tr>
+        </thead>
+        <tbody>
+            {index.flatMap(item => 
+                item.data.map(entry => (
+                    <tr>
+                        <td><a href={`item/${entry.slug}`}>{entry.title}</a></td>
+                        <td>{entry.description}</td>
+                        <td>
+                            <div class="tags">
+                                {entry.tags.map(tag => (
+                                    <span class="tag">{tag}</span>
+                                ))}
+                            </div>
+                        </td>
+                    </tr>
+                ))
+            )}
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,23 @@
+---
+import { getCollection, getEntry, type CollectionEntry } from "astro:content";
+import { createHash } from "crypto";
+
+export async function getStaticPaths() {
+  const index: CollectionEntry<"index">[] = await getCollection("index");
+  const paths = index.map(item => item.data.map(entry => entry.files.map(file => file.path))).flat(2).map(path => ({params: {path}}));
+
+  return paths;
+}
+
+const { path } = Astro.params;
+
+const pathHash = createHash('sha224').update(path || '').digest('hex');
+
+---
+
+<pre>
+You requested for {path}
+Path hash is {pathHash}
+</pre>
+
+<p><a href={`https://t.me/tpcttrpctools_bot?start=get_${pathHash}`}>Downalod here</a></p>
