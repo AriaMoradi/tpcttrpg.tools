@@ -46,7 +46,7 @@ const index: CollectionEntry<'index'>[] = await getCollection('index');
             {index.flatMap(item => 
                 item.data.map(entry => (
                     <tr>
-                        <td><a href={`item/${entry.slug}`}>{entry.title}</a></td>
+                        <td><a href={`collection/${entry.slug}`}>{entry.title}</a></td>
                         <td>{entry.description}</td>
                         <td>
                             <div class="tags">
