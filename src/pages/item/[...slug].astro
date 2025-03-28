@@ -16,7 +16,19 @@ const item = index.flatMap(item => item.data).find(entry => entry.slug === slug)
 const files = item?.files;
 
 
-console.log(item)
+function fileSizeToReadable(size: number) {
+  // Convert bytes to KB, MB, GB, etc.
+  const units = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
+  let index = 0;
+  let readableSize = size;
+
+  while (readableSize >= 1024 && index < units.length - 1) {
+    readableSize /= 1024;
+    index++;
+  }
+
+  return `${Math.round(readableSize * 100) / 100} ${units[index]}`;
+}
 ---
 
 <style>
@@ -57,7 +69,7 @@ console.log(item)
           <tr>
             <td class="border p-2"><a href={`/file/${file.path}`}>{file.name}</a></td>
             <td class="border p-2">{file.description || '-'}</td>
-            <td class="border p-2">{Math.round(file.size / 1024)} KB</td>
+            <td class="border p-2">{fileSizeToReadable(file.size)}</td>
           </tr>
         ))}
       </tbody>
