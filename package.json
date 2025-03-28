@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "dist": "pnpm build && cd dist && git init && git branch -m dist && git remote add origin git@github.com:AriaMoradi/tpcttrpg.tools.git && git add -A && git commit -m 'update site' && git push origin dist --force && cd ..",
     "preview": "astro preview",
     "astro": "astro"
   },
