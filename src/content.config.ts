@@ -2,7 +2,7 @@ import { defineCollection, z } from 'astro:content';
 import { glob, file } from 'astro/loaders';
 
 const index = defineCollection({ 
-    loader: glob({ pattern: "**/*.json", base: "./index" }),
+    loader: glob({ pattern: "**/*.json", base: import.meta.env.INDEX_ROOT || "./content" }),
     schema: z.object({
         title: z.string(),
         description: z.string(),
